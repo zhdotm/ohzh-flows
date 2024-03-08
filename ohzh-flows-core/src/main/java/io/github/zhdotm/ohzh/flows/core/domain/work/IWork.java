@@ -1,5 +1,6 @@
 package io.github.zhdotm.ohzh.flows.core.domain.work;
 
+import io.github.zhdotm.ohzh.flows.core.enums.WorkStateEnum;
 import org.jeasy.flows.work.Work;
 
 /**
@@ -9,4 +10,11 @@ import org.jeasy.flows.work.Work;
  */
 
 public interface IWork extends Work {
+
+    /**
+     * 获取工作状态
+     *
+     * @return 工作状态
+     */
+    WorkStateEnum getState();
 }
